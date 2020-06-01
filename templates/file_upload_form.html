@@ -1,0 +1,31 @@
+<html>  
+<head>  
+    <title>upload</title>  
+</head>  
+<body>  
+
+    <b>
+    Directions to use: <br>
+    Click on "Choose File" button and then click on "Upload" button to upload the images.
+    <br>
+    Then Click on "Compare" to get the results.
+    <br>
+    </b><br>
+    <b>Please Upload Original/Genuine Signature Sample:</b><br><br>
+    <form action = "/success1" method = "post" enctype="multipart/form-data">  
+        <input type="file" name="file" value="Image 1" />  
+        <input type = "submit" value="Upload">  
+    </form> 
+
+    <br>
+    <b>Please Upload the sample signature you want to test:</b><br><br>
+    <form action = "/success2" method = "post" enctype="multipart/form-data">  
+        <input type="file" name="file" value="Image 2"/>  
+        <input type = "submit" value="Upload">  
+    </form> 	
+    <br>
+    <form action="/get_result" method = "post">
+        <button value="Compare">Compare</button>
+    </form>
+</body>  
+</html>  
